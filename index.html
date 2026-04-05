@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Krishnakumar B — Machine Learning Scientist & Systems Engineer. Core ML, Deep Learning, HPC, Embedded Systems (ADAS/Radar). Georgia Tech OMSCS. Building AI from the ground up.">
+    <meta name="keywords" content="Krishnakumar B, Machine Learning, Systems Engineer, Deep Learning, ADAS, Radar, Georgia Tech, OMSCS, HPC, Reinforcement Learning, Core ML">
+    <meta name="author" content="Krishnakumar B">
+    <meta property="og:title" content="Krishnakumar B | ML Scientist & Systems Engineer">
+    <meta property="og:description" content="Building foundational AI systems from the ground up. Core ML, HPC, Embedded Systems.">
+    <meta property="og:type" content="website">
+    <title>Krishnakumar B | ML Scientist &amp; Systems Engineer</title>
+
+    <!-- Preload critical assets -->
+    <link rel="preload" href="assets/profile.png" as="image">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ============ CURSOR GLOW ============ -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- ============ NAVIGATION ============ -->
+    <nav class="nav" id="navbar">
+        <div class="nav__inner">
+            <a href="#hero" class="nav__logo">
+                <span class="nav__logo-bracket">&lt;</span>KB<span class="nav__logo-slash">/</span><span class="nav__logo-bracket">&gt;</span>
+            </a>
+            <div class="nav__links" id="navLinks">
+                <a href="#about" class="nav__link">About</a>
+                <a href="#research" class="nav__link">Research</a>
+                <a href="#projects" class="nav__link">Projects</a>
+                <a href="#experience" class="nav__link">Experience</a>
+                <a href="#education" class="nav__link">Education</a>
+                <a href="#skills" class="nav__link">Skills</a>
+                <a href="#connect" class="nav__link nav__link--cta">Connect</a>
+            </div>
+            <button class="nav__hamburger" id="navHamburger" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+        <div class="hero__bg-grid"></div>
+        <div class="hero__particles" id="heroParticles"></div>
+        <div class="hero__content">
+            <div class="hero__text">
+                <p class="hero__greeting anim-reveal" style="--delay:0.1s">Hello, I'm</p>
+                <h1 class="hero__name anim-reveal" style="--delay:0.25s">Krishnakumar <span class="hero__name-accent">B</span></h1>
+                <div class="hero__title-wrapper anim-reveal" style="--delay:0.4s">
+                    <span class="hero__title-prefix">></span>
+                    <span class="hero__title" id="heroTitle"></span>
+                    <span class="hero__cursor">|</span>
+                </div>
+                <p class="hero__tagline anim-reveal" style="--delay:0.55s">
+                    Building foundational AI systems from the ground up.<br>
+                    No wrappers. No shortcuts. Pure mathematics & engineering.
+                </p>
+                <div class="hero__actions anim-reveal" style="--delay:0.7s">
+                    <a href="#projects" class="btn btn--primary">
+                        <span>View Projects</span>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </a>
+                    <a href="#research" class="btn btn--ghost">
+                        <span>Research & Papers</span>
+                    </a>
+                </div>
+                <div class="hero__stats anim-reveal" style="--delay:0.85s">
+                    <div class="hero__stat">
+                        <span class="hero__stat-number" data-count="5">0</span><span class="hero__stat-plus">+</span>
+                        <span class="hero__stat-label">Years Experience</span>
+                    </div>
+                    <div class="hero__stat-divider"></div>
+                    <div class="hero__stat">
+                        <span class="hero__stat-number" data-count="14">0</span><span class="hero__stat-plus">+</span>
+                        <span class="hero__stat-label">Core ML Projects</span>
+                    </div>
+                    <div class="hero__stat-divider"></div>
+                    <div class="hero__stat">
+                        <span class="hero__stat-number" data-count="1">0</span>
+                        <span class="hero__stat-label">Patent Granted</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__image-col anim-reveal" style="--delay:0.3s">
+                <div class="hero__image-wrapper">
+                    <div class="hero__image-ring"></div>
+                    <div class="hero__image-ring hero__image-ring--2"></div>
+                    <img src="assets/profile.png" alt="Krishnakumar B — ML Scientist" class="hero__image" loading="eager" width="420" height="540">
+                    <div class="hero__image-badge hero__image-badge--top">
+                        <span class="badge__icon">🎓</span>
+                        <span class="badge__text">Georgia Tech OMSCS</span>
+                    </div>
+                    <div class="hero__image-badge hero__image-badge--bottom">
+                        <span class="badge__icon">🧬</span>
+                        <span class="badge__text">Patent Holder</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero__scroll-indicator">
+            <span>Scroll to explore</span>
+            <div class="hero__scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section about" id="about">
+        <div class="section__container">
+            <div class="section__header anim-reveal">
+                <span class="section__number">01</span>
+                <h2 class="section__title">About <span class="text-gradient">Me</span></h2>
+                <div class="section__line"></div>
+            </div>
+            <div class="about__grid">
+                <div class="about__content anim-reveal" style="--delay:0.15s">
+                    <p class="about__lead">
+                        I am a <strong>Machine Learning Scientist</strong> and <strong>Systems Engineer</strong> specializing in Core ML algorithms, Deep Learning, and hardware-software optimization.
+                    </p>
+                    <p>
+                        My engineering philosophy centers on moving beyond high-level wrappers to build foundational AI systems from the ground up. I am deeply passionate about engineering robust mathematical models, real-time reinforcement learning systems, and high-performance C++ codebases for embedded architectures such as <strong>ADAS</strong> and <strong>Radar</strong>.
+                    </p>
+                    <p>
+                        I am currently pursuing a <strong>Master of Science in Computer Science (OMSCS)</strong> at the <strong>Georgia Institute of Technology</strong>, focusing on Core Machine Learning and Computing Systems.
+                    </p>
+                    <div class="about__mandate">
+                        <div class="about__mandate-header">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            <span>Engineering Mandate</span>
+                        </div>
+                        <p>Single Responsibility principle · Optimal O(n) complexity · Factory, Singleton, Observer patterns · Test-Driven Development · Zero-vulnerability tolerance</p>
+                    </div>
+                </div>
+                <div class="about__highlights anim-reveal" style="--delay:0.3s">
+                    <div class="highlight-card">
+                        <div class="highlight-card__icon">⚡</div>
+                        <h3 class="highlight-card__title">Core ML</h3>
+                        <p class="highlight-card__desc">Building algorithms from raw mathematics — no framework wrappers</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-card__icon">🔧</div>
+                        <h3 class="highlight-card__title">Systems Engineering</h3>
+                        <p class="highlight-card__desc">Hardware simulators, kernel modules, drivers in C/C++ & Assembly</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-card__icon">🧠</div>
+                        <h3 class="highlight-card__title">Deep Learning</h3>
+                        <p class="highlight-card__desc">Custom Transformers, GANs, RL agents — engineered from scratch</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-card__icon">🏎️</div>
+                        <h3 class="highlight-card__title">HPC & Embedded</h3>
+                        <p class="highlight-card__desc">ADAS radar processing, multi-threading, latency optimization</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ RESEARCH & PATENTS ============ -->
+    <section class="section research" id="research">
+        <div class="section__container">
+            <div class="section__header anim-reveal">
+                <span class="section__number">02</span>
+                <h2 class="section__title">Research & <span class="text-gradient">Patents</span></h2>
+                <div class="section__line"></div>
+            </div>
+            <div class="research__grid">
+                <!-- Patent -->
+                <article class="research-card research-card--patent anim-reveal" style="--delay:0.1s">
+                    <div class="research-card__badge">Patent</div>
+                    <div class="research-card__icon">🧬</div>
+                    <h3 class="research-card__title">RNA2DNA (SW-17655/2023)</h3>
+                    <p class="research-card__desc">Invented a novel bioinformatics algorithm and system to mathematically convert 3D structures of single-stranded RNA (ssRNA) to single-stranded DNA.</p>
+                    <div class="research-card__meta">
+                        <span class="research-card__date">Issued Nov 2023</span>
+                    </div>
+                </article>
+                <!-- IEEE Publication -->
+                <article class="research-card research-card--publication anim-reveal" style="--delay:0.2s">
+                    <div class="research-card__badge">IEEE Publication</div>
+                    <div class="research-card__icon">📄</div>
+                    <h3 class="research-card__title">EEG-based Brain Wave Recognition using GRU and LSTM</h3>
+                    <p class="research-card__desc">Applied Deep Learning to classify EEG signals for Brain-Computer Interface (BCI) applications. Published in IEEE Xplore.</p>
+                    <div class="research-card__meta">
+                        <span class="research-card__date">Dec 2022</span>
+                        <a href="https://scholar.google.com/citations?user=ndHzHP4AAAAJ" target="_blank" rel="noopener" class="research-card__link">Google Scholar →</a>
+                    </div>
+                </article>
+                <!-- Scikit-Learn -->
+                <article class="research-card research-card--opensource anim-reveal" style="--delay:0.3s">
+                    <div class="research-card__badge">Open Source</div>
+                    <div class="research-card__icon">🔬</div>
+                    <h3 class="research-card__title">Scikit-Learn Core Contributor</h3>
+                    <p class="research-card__desc">Merged PR #33390 (March 2026), fixing critical numerical stability issues and preserving signed dtype in label_binarize for uint targets in core C/Cython layers.</p>
+                    <div class="research-card__meta">
+                        <span class="research-card__date">March 2026</span>
+                        <a href="https://github.com/scikit-learn/scikit-learn/pull/33390" target="_blank" rel="noopener" class="research-card__link">View PR →</a>
+                    </div>
+                </article>
+                <!-- GSoC -->
+                <article class="research-card research-card--gsoc anim-reveal" style="--delay:0.4s">
+                    <div class="research-card__badge">GSoC '23</div>
+                    <div class="research-card__icon">☀️</div>
+                    <h3 class="research-card__title">Google Summer of Code — Stratosphere IPS</h3>
+                    <p class="research-card__desc">Selected contributor for the Stratosphere Linux IPS project, developing behavioral-based network security algorithms and Intrusion Prevention Systems.</p>
+                    <div class="research-card__meta">
+                        <span class="research-card__date">Summer 2023</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section projects" id="projects">
+        <div class="section__container">
+            <div class="section__header anim-reveal">
+                <span class="section__number">03</span>
+                <h2 class="section__title">Flagship <span class="text-gradient">Projects</span></h2>
+                <div class="section__line"></div>
+                <p class="section__subtitle">Core ML & Systems — No Wrappers, No Shortcuts</p>
+            </div>
+            <div class="projects__grid">
+
+                <article class="project-card anim-reveal" style="--delay:0.1s; --accent: #f97316;">
+                    <div class="project-card__header">
+                        <div class="project-card__icon">🔩</div>
+                        <a href="https://github.com/krishnakumarbhat" target="_blank" rel="noopener" class="project-card__gh" aria-label="GitHub">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                        </a>
+                    </div>
+                    <h3 class="project-card__title">Zero Abstraction</h3>
+                    <p class="project-card__subtitle">Build-It-All</p>
+                    <p class="project-card__desc">Engineered foundational CS layers from scratch — hardware simulators, custom Verilog components, kernel modules, disk/keyboard drivers, a C Compiler and Assembler using pure C/C++ and Assembly.</p>
+                    <div class="project-card__tags">
+                        <span class="tag">C/C++</span><span class="tag">Assembly</span><span class="tag">Verilog</span><span class="tag">Kernel</span>
+                    </div>
+                </article>
+
+                <article class="project-card anim-reveal" style="--delay:0.15s; --accent: #8b5cf6;">
+                    <div class="project-card__header">
+                        <div class="project-card__icon">🧠</div>
+                        <a href="https://github.com/krishnakumarbhat" target="_blank" rel="noopener" class="project-card__gh" aria-label="GitHub">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                        </a>
+                    </div>
+                    <h3 class="project-card__title">Zero to AI Genesis</h3>
+                    <p class="project-card__subtitle">Pure NumPy & Mathematics</p>
+                    <p class="project-card__desc">A comprehensive educational AI library from scratch using pure NumPy and Mathematics. Tracks building classic ML algorithms up to LLM alignment — no framework wrappers.</p>
+                    <div class="project-card__tags">
+                        <span class="tag">NumPy</span><span class="tag">Mathematics</span><span class="tag">ML</span><span class="tag">LLM</span>
+                    </div>
+                </article>
+
+                <article class="project-card anim-reveal" style="--delay:0.2s; --accent: #06b6d4;">
+                    <div class="project-card__header">
+                        <div class="project-card__icon">🎵</div>
+                        <a href="https://github.com/krishnakumarbhat" target="_blank" rel="noopener" class="project-card__gh" aria-label="GitHub">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                        </a>
+                    </div>
+                    <h3 class="project-card__title">AriaLM</h3>
+                    <p class="project-card__subtitle">Generative AI Architecture</p>
+                    <p class="project-card__desc">~5M parameter LLaMA-style Transformer from scratch for symbolic music generation. Designed with RoPE, Grouped Query Attention (GQA), SwiGLU, and a custom REMI tokenizer.</p>
+                    <div class="project-card__tags">
+                        <span class="tag">Transformer</span><span class="tag">RoPE</span><span class="tag">GQA</span><span class="tag">SwiGLU</span>
+                    </div>
+                </article>
+
+                <article class="project-card anim-reveal" style="--delay:0.25s; --accent: #ec4899;">
+                    <div class="project-card__header">
+                        <div class="project-card__icon">🎭</div>
+                        <a href="https://github.com/krishnakumarbhat" target="_blank" rel="noopener" class="project-card__gh" aria-label="GitHub">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                        </a>
+                    </div>
+                    <h3 class="project-card__title">GANdiscremin</h3>
+                    <p class="project-card__subtitle">14+ GAN Variants from Scratch</p>
+                    <p class="project-card__desc">Implemented WGAN, DCGAN, InfoGAN, and 11+ more GAN architecture variants from scratch to perform comparative studies on computer vision datasets.</p>
+                    <div class="project-card__tags">
+                        <span class="tag">GANs</span><span class="tag">PyTorch</span><span class="tag">CV</span><span class="tag">WGAN</span>
+                    </div>
+                </article>
+
+                <article class="project-card anim-reveal" style="--delay:0.3s; --accent: #10b981;">
+                    <div class="project-card__header">
+                        <div class="project-card__icon">🤖</div>
+                        <a href="https://github.com/krishnakumarbhat" target="_blank" rel="noopener" class="project-card__gh" aria-label="GitHub">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                        </a>
+                    </div>
+                    <h3 class="project-card__title">Robotic RL</h3>
+                    <p class="project-card__subtitle">Reinforcement Learning Agents</p>
+                    <p class="project-card__desc">Trained real-time RL agents for complex physical manipulation (reaching, pushing, sliding) using SAC, PPO, and HER in panda-gym on PyBullet physics engine.</p>
+                    <div class="project-card__tags">
+                        <span class="tag">SAC</span><span class="tag">PPO</span><span class="tag">HER</span><span class="tag">PyBullet</span>
+                    </div>
+                </article>
+
+                <article class="project-card anim-reveal" style="--delay:0.35s; --accent: #eab308;">
+                    <div class="project-card__header">
+                        <div class="project-card__icon">📈</div>
+                        <a href="https://github.com/krishnakumarbhat" target="_blank" rel="noopener" class="project-card__gh" aria-label="GitHub">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                        </a>
+                    </div>
+                    <h3 class="project-card__title">Tradezy</h3>
+                    <p class="project-card__subtitle">Streaming Data ML</p>
+                    <p class="project-card__desc">Real-time stock prediction system with LSTM neural networks and Apache Kafka for handling high-throughput, low-latency streaming data pipelines.</p>
+                    <div class="project-card__tags">
+                        <span class="tag">LSTM</span><span class="tag">Kafka</span><span class="tag">Streaming</span><span class="tag">Finance</span>
+                    </div>
+                </article>
+
+                <article class="project-card anim-reveal" style="--delay:0.4s; --accent: #64748b;">
+                    <div class="project-card__header">
+                        <div class="project-card__icon">🐧</div>
+                        <a href="https://github.com/krishnakumarbhat" target="_blank" rel="noopener" class="project-card__gh" aria-label="GitHub">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                        </a>
+                    </div>
+                    <h3 class="project-card__title">linux_sleep_driver</h3>
+                    <p class="project-card__subtitle">System-Level Linux Utility</p>
+                    <p class="project-card__desc">System-level Linux Bash utility using ACPID for advanced suspend-then-hibernate power management, directly overriding systemd-logind event lifecycles.</p>
+                    <div class="project-card__tags">
+                        <span class="tag">Linux</span><span class="tag">ACPID</span><span class="tag">systemd</span><span class="tag">Bash</span>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section experience" id="experience">
+        <div class="section__container">
+            <div class="section__header anim-reveal">
+                <span class="section__number">04</span>
+                <h2 class="section__title">Professional <span class="text-gradient">Experience</span></h2>
+                <div class="section__line"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline__line"></div>
+
+                <article class="timeline__item anim-reveal" style="--delay:0.1s">
+                    <div class="timeline__dot"></div>
+                    <div class="timeline__card">
+                        <div class="timeline__card-header">
+                            <div>
+                                <h3 class="timeline__role">AI Research Engineer <span class="timeline__type">(GenAI & Agents)</span></h3>
+                                <p class="timeline__company">Aptiv · Bengaluru</p>
+                            </div>
+                            <span class="timeline__date">May 2025 — Present</span>
+                        </div>
+                        <ul class="timeline__details">
+                            <li>Architected a stateful, multi-agent workflow using <strong>LangGraph</strong> to orchestrate Drive Cycle generation, enabling agents to self-correct and autonomously execute complex HW-SW tasks.</li>
+                            <li>Bridged stochastic LLM outputs with deterministic systems using <strong>Pydantic</strong> for schema validation.</li>
+                            <li>Engineered a RAG framework with <strong>ChromaDB</strong> that reduced manual root-cause analysis workload by <strong>47%</strong>.</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="timeline__item anim-reveal" style="--delay:0.2s">
+                    <div class="timeline__dot"></div>
+                    <div class="timeline__card">
+                        <div class="timeline__card-header">
+                            <div>
+                                <h3 class="timeline__role">Data Analyst & Algorithm Optimization</h3>
+                                <p class="timeline__company">Aptiv · Bengaluru</p>
+                            </div>
+                            <span class="timeline__date">Jun 2024 — May 2025</span>
+                        </div>
+                        <ul class="timeline__details">
+                            <li>Engineered high-performance <strong>C++ and Python</strong> codebases for automotive radar systems using <strong>Bazel</strong>.</li>
+                            <li>Implemented multi-processing and hash-table optimization that slashed algorithmic latency by <strong>85%</strong> (1 hour → 9 minutes).</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="timeline__item anim-reveal" style="--delay:0.3s">
+                    <div class="timeline__dot"></div>
+                    <div class="timeline__card">
+                        <div class="timeline__card-header">
+                            <div>
+                                <h3 class="timeline__role">ADAS Embedded Systems Intern</h3>
+                                <p class="timeline__company">Aptiv · Bengaluru</p>
+                            </div>
+                            <span class="timeline__date">Jan 2024 — Jun 2024</span>
+                        </div>
+                        <ul class="timeline__details">
+                            <li>Engineered robust <strong>C++ processing pipelines</strong> for ADAS, enabling near real-time validation for embedded radar data.</li>
+                            <li>Enhanced core tracking logic algorithms to isolate tracking errors at the hardware interface level.</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="timeline__item anim-reveal" style="--delay:0.4s">
+                    <div class="timeline__dot"></div>
+                    <div class="timeline__card">
+                        <div class="timeline__card-header">
+                            <div>
+                                <h3 class="timeline__role">Backend Optimization Developer</h3>
+                                <p class="timeline__company">Nokia · Remote</p>
+                            </div>
+                            <span class="timeline__date">Jun 2023 — Nov 2023</span>
+                        </div>
+                        <ul class="timeline__details">
+                            <li>Architected a scalable backend data management system for the FS0 Toolkit, reducing processing times by <strong>70%</strong>.</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="timeline__item anim-reveal" style="--delay:0.5s">
+                    <div class="timeline__dot"></div>
+                    <div class="timeline__card">
+                        <div class="timeline__card-header">
+                            <div>
+                                <h3 class="timeline__role">Deep Learning Intern</h3>
+                                <p class="timeline__company">iNeuron · Remote</p>
+                            </div>
+                            <span class="timeline__date">Oct 2023 — Feb 2024</span>
+                        </div>
+                        <ul class="timeline__details">
+                            <li>Developed foundational Machine Learning models focusing on data pipeline optimization and algorithm efficiency.</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section class="section education" id="education">
+        <div class="section__container">
+            <div class="section__header anim-reveal">
+                <span class="section__number">05</span>
+                <h2 class="section__title">Education <span class="text-gradient">& Certifications</span></h2>
+                <div class="section__line"></div>
+            </div>
+            <div class="education__grid">
+                <article class="edu-card anim-reveal" style="--delay:0.1s">
+                    <div class="edu-card__logo">🏛️</div>
+                    <div class="edu-card__content">
+                        <h3 class="edu-card__school">Georgia Institute of Technology</h3>
+                        <p class="edu-card__degree">Master of Science in Computer Science (OMSCS)</p>
+                        <p class="edu-card__focus">Focus: Core Machine Learning, AI Research, and Computing Systems</p>
+                        <span class="edu-card__status">Currently Pursuing</span>
+                    </div>
+                </article>
+                <article class="edu-card anim-reveal" style="--delay:0.2s">
+                    <div class="edu-card__logo">🎓</div>
+                    <div class="edu-card__content">
+                        <h3 class="edu-card__school">JSS Science and Technology University</h3>
+                        <p class="edu-card__degree">B.Tech in Electronics & Communication</p>
+                        <p class="edu-card__focus">CGPA: 8.2/10.0 · Vice-Chairman, IEEE RAS (Robotics and Automation Society)</p>
+                        <span class="edu-card__location">Mysuru, India</span>
+                    </div>
+                </article>
+                <article class="edu-card anim-reveal" style="--delay:0.3s">
+                    <div class="edu-card__logo">🛡️</div>
+                    <div class="edu-card__content">
+                        <h3 class="edu-card__school">Indian Institute of Technology (IIT), Kharagpur</h3>
+                        <p class="edu-card__degree">Certification in Ethical Hacking & Cybersecurity</p>
+                        <p class="edu-card__focus">Grade: A</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section skills" id="skills">
+        <div class="section__container">
+            <div class="section__header anim-reveal">
+                <span class="section__number">06</span>
+                <h2 class="section__title">Technical <span class="text-gradient">Arsenal</span></h2>
+                <div class="section__line"></div>
+            </div>
+            <div class="skills__grid">
+                <div class="skill-group anim-reveal" style="--delay:0.1s">
+                    <h3 class="skill-group__title">
+                        <span class="skill-group__icon">🎯</span> Core Competencies
+                    </h3>
+                    <div class="skill-group__tags">
+                        <span class="skill-tag">Core ML Algorithms</span>
+                        <span class="skill-tag">High-Performance Computing</span>
+                        <span class="skill-tag">Embedded Systems (ADAS)</span>
+                        <span class="skill-tag">Radar Processing</span>
+                        <span class="skill-tag">Reinforcement Learning</span>
+                        <span class="skill-tag">Multi-processing/Threading</span>
+                        <span class="skill-tag">Algorithm Design</span>
+                        <span class="skill-tag">System Architecture</span>
+                    </div>
+                </div>
+                <div class="skill-group anim-reveal" style="--delay:0.2s">
+                    <h3 class="skill-group__title">
+                        <span class="skill-group__icon">💻</span> Languages
+                    </h3>
+                    <div class="skill-group__tags">
+                        <span class="skill-tag skill-tag--lang">C++</span>
+                        <span class="skill-tag skill-tag--lang">Python</span>
+                        <span class="skill-tag skill-tag--lang">C</span>
+                        <span class="skill-tag skill-tag--lang">Bash</span>
+                        <span class="skill-tag skill-tag--lang">SQL</span>
+                        <span class="skill-tag skill-tag--lang">JavaScript/TypeScript</span>
+                    </div>
+                </div>
+                <div class="skill-group anim-reveal" style="--delay:0.3s">
+                    <h3 class="skill-group__title">
+                        <span class="skill-group__icon">🔧</span> Frameworks & Infrastructure
+                    </h3>
+                    <div class="skill-group__tags">
+                        <span class="skill-tag skill-tag--fw">PyTorch</span>
+                        <span class="skill-tag skill-tag--fw">TensorFlow</span>
+                        <span class="skill-tag skill-tag--fw">Scikit-learn</span>
+                        <span class="skill-tag skill-tag--fw">OpenCV</span>
+                        <span class="skill-tag skill-tag--fw">LangGraph</span>
+                        <span class="skill-tag skill-tag--fw">ChromaDB</span>
+                        <span class="skill-tag skill-tag--fw">Ollama</span>
+                        <span class="skill-tag skill-tag--fw">Bazel</span>
+                        <span class="skill-tag skill-tag--fw">Docker</span>
+                        <span class="skill-tag skill-tag--fw">Linux Kernel/Drivers</span>
+                        <span class="skill-tag skill-tag--fw">Apache Kafka</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ CONNECT ============ -->
+    <section class="section connect" id="connect">
+        <div class="section__container">
+            <div class="section__header anim-reveal">
+                <span class="section__number">07</span>
+                <h2 class="section__title">Let's <span class="text-gradient">Connect</span></h2>
+                <div class="section__line"></div>
+                <p class="section__subtitle">Open to research collaborations, core ML roles, and systems engineering opportunities.</p>
+            </div>
+            <div class="connect__grid">
+                <a href="mailto:krishnah37@protonmail.com" class="connect-card anim-reveal" style="--delay:0.1s; --accent:#8b5cf6">
+                    <div class="connect-card__icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="2"/><polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2"/></svg>
+                    </div>
+                    <span class="connect-card__label">Email</span>
+                    <span class="connect-card__value">krishnah37@protonmail.com</span>
+                </a>
+                <a href="https://linkedin.com/in/krishnakumarbb" target="_blank" rel="noopener" class="connect-card anim-reveal" style="--delay:0.15s; --accent:#0077b5">
+                    <div class="connect-card__icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                    </div>
+                    <span class="connect-card__label">LinkedIn</span>
+                    <span class="connect-card__value">krishnakumarbb</span>
+                </a>
+                <a href="https://github.com/krishnakumarbhat" target="_blank" rel="noopener" class="connect-card anim-reveal" style="--delay:0.2s; --accent:#f0f6fc">
+                    <div class="connect-card__icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                    </div>
+                    <span class="connect-card__label">GitHub</span>
+                    <span class="connect-card__value">krishnakumarbhat</span>
+                </a>
+                <a href="https://scholar.google.com/citations?user=ndHzHP4AAAAJ" target="_blank" rel="noopener" class="connect-card anim-reveal" style="--delay:0.25s; --accent:#4285f4">
+                    <div class="connect-card__icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 100 14 7 7 0 000-14z"/></svg>
+                    </div>
+                    <span class="connect-card__label">Google Scholar</span>
+                    <span class="connect-card__value">Publications & Citations</span>
+                </a>
+                <a href="https://leetcode.com/u/bhatkrishnakumar" target="_blank" rel="noopener" class="connect-card anim-reveal" style="--delay:0.3s; --accent:#ffa116">
+                    <div class="connect-card__icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M13.483 0a1.374 1.374 0 00-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 00-1.209 2.104 5.35 5.35 0 00-.125.513 5.527 5.527 0 00.062 2.362 5.83 5.83 0 00.349 1.017 5.938 5.938 0 001.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 00-1.951-.003l-2.396 2.392a3.021 3.021 0 01-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 01.066-.523 2.545 2.545 0 01.619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 00-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0013.483 0zm-2.866 12.815a1.38 1.38 0 00-1.38 1.382 1.38 1.38 0 001.38 1.382H20.79a1.38 1.38 0 001.38-1.382 1.38 1.38 0 00-1.38-1.382z"/></svg>
+                    </div>
+                    <span class="connect-card__label">LeetCode</span>
+                    <span class="connect-card__value">Top 39% · Rating 1,518</span>
+                </a>
+                <a href="https://kaggle.com/krishnakumarbhat/code" target="_blank" rel="noopener" class="connect-card anim-reveal" style="--delay:0.35s; --accent:#20beff">
+                    <div class="connect-card__icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M18.825 23.859c-.022.092-.117.141-.281.141h-3.139c-.187 0-.351-.082-.492-.248l-5.178-6.589-1.448 1.374v5.111c0 .235-.117.352-.351.352H5.505c-.236 0-.354-.117-.354-.352V.353c0-.233.118-.353.354-.353h2.431c.234 0 .351.12.351.353v14.343l6.203-6.272c.165-.165.33-.246.495-.246h3.239c.144 0 .236.06.281.18.046.149.014.256-.094.328L12.11 15.03l6.853 8.496c.089.104.104.2.048.329z"/></svg>
+                    </div>
+                    <span class="connect-card__label">Kaggle</span>
+                    <span class="connect-card__value">krishnakumarbhat</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__left">
+                <span class="footer__logo">
+                    <span class="nav__logo-bracket">&lt;</span>KB<span class="nav__logo-slash">/</span><span class="nav__logo-bracket">&gt;</span>
+                </span>
+                <p class="footer__tagline">Building AI from the ground up.</p>
+            </div>
+            <div class="footer__right">
+                <p class="footer__copy">&copy; 2026 Krishnakumar B. All rights reserved.</p>
+                <p class="footer__location">📍 Bengaluru, Karnataka, India</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
